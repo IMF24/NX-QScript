@@ -14,6 +14,6 @@ namespace NX_QScript {
     ///  Main access class for working with Neversoft QScript files.
     /// </summary>
     public static class QBC {
-        
+
     }
 }
