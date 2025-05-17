@@ -1,7 +1,33 @@
-﻿// = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
-//  N X   Q S C R I P T   -   E N T R Y   P O I N T
-//      Main entry point class for QBC
-// = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+﻿/* =========================================================================
+          NEVERSOFT QSCRIPT - C# LIBRARY FOR WORKING WITH NEVERSOFT
+                      TONY HAWK ENGINE QSCRIPT FILES
+          
+                                ---------                  
+                             ------=*+----*@%              
+                         -------*@@*=+%@#+@-+@@:           
+                      ------=%@%=-=+***=+@=-=@=---:-       
+                   -----=*@%*--*@#=.....=#@*@%@#=----:     
+                   ---%@#=-==#@-...........-@#--+%@+:::    
+                   ---@=====@+...=@@#*#%@*...+%-=-**:::    
+                   ---#--=-%+..:@#++%@%*+*@:..+%=-**:::    
+                   ---#==-+@...%*+@@@@@@@++@:.:@+=**:::    
+                   ---#-==*#...@+*@@@@@@@#+@-..@+=**:::    
+                   ---@-==+@...%*+@@@@@@@*+@:.:@=-**:::    
+                   ---#-===%+..:@#++%@@*+*@:..+%==#*:::    
+                   ---@==-==@+...=@@#*#%@*...+%===**:::    
+                   ---%--====#%:...........:%#====+*:::    
+                   ---#-=--===%@@%-.....=%@*=====-%*:::    
+                   ---@-===*@@@--*@+*##+==---====-@*:::    
+                   ---*@@+=##---*@===-===-===--+%@#-:::    
+                    -::::=#@*---=@#+======-=#@#=::::::.    
+                      :::::@=-=@%=-===--*@@+-:::::::.      
+                         :-@+@#::*@@#%@#-:::::::..         
+                          @@@:::::::::::::::..             
+                          @     :::::::::.                 
+                                                       
+                   MADE IN C# 7.3 ON .NET FRAMEWORK 4.6.2
+                       CODED BY IMF24 AND DONNAKEN15
+========================================================================= */
 // Import required namespaces.
 using NX_QScript.Internal;
 using NX_QScript.Types;
@@ -105,9 +131,9 @@ namespace NX_QScript {
             // Just shuts the compiler up for now
             return new byte[0];
         }
-        
+
         /// <summary>
-        ///  Compile a source code file or string into an array of bytes representing the QB file.
+        ///  Compile a source code file or string into an array of bytes representing the QB file, given the target game.
         /// </summary>
         /// <param name="qFileOrSource">
         ///  The Q file path OR the raw source code to compile.
@@ -116,7 +142,7 @@ namespace NX_QScript {
         ///  Input mode that the <paramref name="qFileOrSource"/> should be treated as.
         /// </param>
         /// <param name="gameTarget">
-        ///  
+        ///  The target game to compile the script for.
         /// </param>
         /// <returns>
         ///  Array of bytes containing the serialized QB file.
@@ -158,6 +184,7 @@ namespace NX_QScript {
             // Just to shut the compiler up for now
             return new QBFile("");
         }
+
         /// <summary>
         ///  Compile the given Q file or source code into a single <see cref="QBFile"/> object containing the serialized contents, given the input mode and target game.
         /// </summary>
