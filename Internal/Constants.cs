@@ -113,8 +113,20 @@ namespace NX_QScript {
         ///  Less than or equal to token, used for comparisons checking if one value is smaller or equivalent to the other.
         /// </summary>
         public const byte SCRIPT_TOKEN_LESSTHANEQUAL = 0x13;
+
+        /// <summary>
+        ///  Greater than token, used for value comparisons to check if one value is larger than the other.
+        /// </summary>
         public const byte SCRIPT_TOKEN_GREATERTHAN = 0x14;
+
+        /// <summary>
+        ///  Greater than or equal to token, used for comparisons checking if one value is larger or equivalent to the other.
+        /// </summary>
         public const byte SCRIPT_TOKEN_GREATERTHANEQUAL = 0x15;
+
+        /// <summary>
+        ///  The Name token following a Pointer token.
+        /// </summary>
         public const byte SCRIPT_TOKEN_NAME = 0x16;
 
         /// <summary>
@@ -263,6 +275,4 @@ namespace NX_QScript {
         /// </summary>
         public const byte SCRIPT_TOKEN_KEYWORD_RANDOMINTEGER = 0x50;
     }
-
-    
 }

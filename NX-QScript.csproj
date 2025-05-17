@@ -58,15 +58,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Internal\BaseJob.cs" />
+    <Compile Include="Exceptions\QBLexerException.cs" />
     <Compile Include="Internal\Chalk.cs" />
-    <Compile Include="Internal\CompileJob.cs" />
     <Compile Include="Internal\Constants.cs" />
     <Compile Include="Internal\Helpers.cs" />
-    <Compile Include="Internal\JobOptions.cs" />
-    <Compile Include="Internal\Lexer.cs" />
     <Compile Include="Internal\LZSS.cs" />
     <Compile Include="Internal\QB.cs" />
+    <Compile Include="Internal\Reader.cs" />
+    <Compile Include="Internal\Writer.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -74,6 +73,7 @@
     </Compile>
     <Compile Include="QBC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\QBFile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

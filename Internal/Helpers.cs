@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NX_QScript.Internal {
+    /// <summary>
+    ///  Helper functions that are used for the library that don't fit elsewhere.
+    /// </summary>
     internal static class Helpers {
         /// <summary>
-        ///  Given a full string of text and an absolute position, prints out the line and column index within a string.
+        ///  Given a full string of text and an absolute position, works out the line and column index within a string.
         /// </summary>
         /// <param name="text">
         ///  Full string of text.
