@@ -13,7 +13,7 @@ namespace NX_QScript.Internal {
     /// <summary>
     ///  Helper class for reading binary data from a file.
     /// </summary>
-    public class Reader {
+    internal class Reader {
         /// <summary>
         ///  Construct a new instance of <see cref="Reader"/>.
         /// </summary>

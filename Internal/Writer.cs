@@ -14,7 +14,7 @@ namespace NX_QScript.Internal {
     /// <summary>
     ///  Helper class for writing binary data to a file.
     /// </summary>
-    public class Writer {
+    internal class Writer {
         /// <summary>
         ///  Construct a new instance of <see cref="Writer"/>.
         /// </summary>
