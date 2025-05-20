@@ -59,8 +59,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\QBLexerException.cs" />
+    <Compile Include="Exceptions\ScriptDecompileException.cs" />
     <Compile Include="Internal\Chalk.cs" />
     <Compile Include="Internal\Constants.cs" />
+    <Compile Include="Internal\Core\ScriptDecompiler.cs" />
     <Compile Include="Internal\Helpers.cs" />
     <Compile Include="Internal\LZSS.cs" />
     <Compile Include="Internal\QB.cs" />

@@ -16,7 +16,7 @@ namespace NX_QScript.Types {
     /// </summary>
     public class QBFile {
         /// <summary>
-        ///  Construct a new instance of <see cref="QBFile"/>.
+        ///  Construct a new instance of <see cref="QBFile"/> given a file path to serialize.
         /// </summary>
         /// <param name="filePath">
         ///  The QB file to be (de)compiled into various QB types.
@@ -24,17 +24,12 @@ namespace NX_QScript.Types {
         public QBFile(string filePath) {
             // Set file path
             FilePath = filePath;
-
-            // Compile or decompile as objects
-            //~ string fileExt = Path.GetExtension(FilePath);
-            //~ if (fileExt == ".q") {
-            //~    QBCItemCore[] items = QBC.InternalCompileAsObjects(FilePath);
-            //~ } else {
-            //~    QBCItemCore[] items = QBC.InternalDecompileAsObjects(FilePath);
-            //~ }
-            //~ Contents = items;
         }
 
+        /// <summary>
+        ///  Construct a new instance of <see cref="QBFile"/> given an array of bytes to deserialize.
+        /// </summary>
+        /// <param name="fileBytes"></param>
         public QBFile(byte[] fileBytes) {
 
         }
